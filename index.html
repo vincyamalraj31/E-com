@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Oor Sweets - The Taste of Heritage</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0d9488", /* Teal-600 */
+                        "background-light": "#f0fdfa", /* Teal-50 */
+                        "background-dark": "#042f2e", /* Teal-950 */
+                        "maroon": "#c2410c", /* Orange-700 (formerly maroon) */
+                        "maroon-dark": "#7c2d12", /* Orange-900 */
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .font-display {
+            font-family: "Newsreader", serif;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#1b160d] dark:text-[#f3eee7] overflow-x-hidden">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root">
+        <!-- Navigation -->
+        <nav
+            class="sticky top-0 z-50 border-b border-[#e7ddcf] glass-nav dark:bg-background-dark/90 dark:border-white/10">
+            <div class="layout-container flex justify-center w-full">
+                <div class="flex flex-1 justify-center px-4 md:px-10 py-3 max-w-[1200px]">
+                    <header class="flex w-full items-center justify-between whitespace-nowrap">
+                        <div class="flex items-center gap-2 text-maroon dark:text-primary">
+                            <span class="material-symbols-outlined text-3xl">temple_hindu</span>
+                            <h2
+                                class="text-maroon dark:text-[#f3eee7] text-2xl font-bold italic tracking-tight font-display">
+                                Oor Sweets</h2>
+                        </div>
+                        <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+                            <div class="flex items-center gap-8">
+                                <a class="text-[#1b160d] dark:text-[#f3eee7] text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="index.html">Home</a>
+                                <a class="text-[#1b160d] dark:text-[#f3eee7] text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="map.html">The Map</a>
+                                <a class="text-[#1b160d] dark:text-[#f3eee7] text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                    href="kitchens.html">Our Kitchens</a>
+                                <div class="relative">
+                                    <a class="text-[#1b160d] dark:text-[#f3eee7] text-sm font-medium leading-normal hover:text-primary transition-colors"
+                                        href="calendar.html">Gifting</a>
+                                    <span class="absolute -top-2 -right-3 flex h-2 w-2">
+                                        <span
+                                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                        <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 items-center">
+                                <a href="checkout.html"
+                                    class="text-[#1b160d] dark:text-[#f3eee7] hover:text-primary transition-colors">
+                                    <span class="material-symbols-outlined">shopping_bag</span>
+                                </a>
+                                <a href="dashboard.html"
+                                    class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-[#1b160d] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-opacity">
+                                    <span class="truncate">Log In</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Mobile Menu Icon -->
+                        <div class="md:hidden flex items-center">
+                            <span class="material-symbols-outlined">menu</span>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <div class="relative flex w-full flex-col">
+            <!-- Full width background image container -->
+            <div class="relative w-full min-h-[650px] flex items-center justify-center bg-cover bg-center bg-no-repeat bg-fixed"
+                data-alt="Crystalline close-up of Srivilliputhur Palkova on a brass plate with a soft-focus background of a temple town"
+                style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(34, 26, 16, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDr5laFzPBCmVLIOd4fMmE6i764wwXPnPGv2ryfFptRq7u8FmmX7y2UWGV7HoaTGOrpFvnnG7nqZsEDJiMbDgdeP0hXvE-ebDiZCG1unyiy4Vfhsh61gSXiLjFCQ_VLLyOz_0Rw1x7MhtXX7M4wc0DZmEwWYVz8gw9_Vim4NY3pFXJmZ-A6nXg0owkxb5knaLEsbPQiiJfKBw-1pV073bpZWW-Aejn-s22qcvEKkQ1F9Aub_yIfA6T0jcL12Y9jUJWEOE038ITNF2c");'>
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1 px-4 md:px-10 z-10 w-full">
+                    <div class="flex flex-col gap-8 text-center items-center justify-center py-20">
+                        <div class="flex flex-col gap-4 max-w-[720px]">
+                            <h1
+                                class="text-white text-5xl md:text-7xl font-black italic leading-tight tracking-tight font-display drop-shadow-md">
+                                The Taste of Heritage
+                            </h1>
+                            <h2
+                                class="text-[#f3eee7] text-lg md:text-xl font-normal leading-relaxed drop-shadow-sm max-w-xl mx-auto">
+                                Authentic sweets from the legendary kitchens of Tamil Nadu, delivered fresh to your
+                                door.
+                            </h2>
+                        </div>
+                        <!-- Glassmorphism Search Bar -->
+                        <div class="w-full max-w-[580px] mt-4">
+                            <label class="flex flex-col w-full h-14 md:h-16 relative group">
+                                <div
+                                    class="glass-panel flex w-full flex-1 items-stretch rounded-full p-1 transition-all focus-within:ring-2 focus-within:ring-primary/50">
+                                    <div class="text-[#f3eee7] flex items-center justify-center pl-4 pr-2">
+                                        <span class="material-symbols-outlined text-[24px]">search</span>
+                                    </div>
+                                    <input
+                                        class="flex w-full min-w-0 flex-1 bg-transparent text-white placeholder:text-[#e7ddcf] px-2 text-base font-normal focus:outline-0 border-none ring-0 placeholder:font-light"
+                                        placeholder="Search for your favorite OOR (Town) special" value="" />
+                                    <div class="flex items-center justify-center p-1">
+                                        <button
+                                            class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-full px-6 bg-primary text-[#1b160d] text-base font-bold shadow-lg hover:bg-[#ffb44d] transition-colors">
+                                            <span class="truncate">Find Sweets</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="mt-3 flex gap-2 justify-center text-xs text-[#e7ddcf]/80">
+                                <span>Trending:</span>
+                                <a class="underline hover:text-primary" href="#">Tirunelveli Halwa</a>,
+                                <a class="underline hover:text-primary" href="#">Srivilliputhur Palkova</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature Section -->
+        <div class="flex justify-center w-full py-16 bg-background-light dark:bg-background-dark">
+            <div class="layout-content-container flex flex-col max-w-[1080px] flex-1 px-4 md:px-10">
+                <div class="flex flex-col gap-10">
+                    <div class="flex flex-col gap-4 text-center md:text-left">
+                        <h1
+                            class="text-maroon dark:text-[#f3eee7] tracking-tight text-4xl md:text-5xl font-bold italic leading-tight font-display">
+                            Why Choose Oor Sweets
+                        </h1>
+                        <p class="text-[#584834] dark:text-[#9a794c] text-lg font-normal leading-normal max-w-[720px]">
+                            We bring the culinary map of Tamil Nadu to your doorstep, preserving recipes that have been
+                            passed down for centuries.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Card 1 -->
+                        <div
+                            class="flex flex-1 gap-4 rounded-xl border border-[#e7ddcf] dark:border-white/10 bg-white dark:bg-[#2a2218] p-6 flex-col shadow-sm hover:shadow-md transition-shadow">
+                            <div
+                                class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-3xl">location_on</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h2
+                                    class="text-[#1b160d] dark:text-[#f3eee7] text-xl font-bold leading-tight font-display">
+                                    Authentic Origins</h2>
+                                <p class="text-[#584834] dark:text-[#9a794c] text-sm leading-relaxed">
+                                    Sourced directly from the specific towns (Oors) famous for their unique sweet-making
+                                    traditions.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div
+                            class="flex flex-1 gap-4 rounded-xl border border-[#e7ddcf] dark:border-white/10 bg-white dark:bg-[#2a2218] p-6 flex-col shadow-sm hover:shadow-md transition-shadow">
+                            <div
+                                class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-3xl">eco</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h2
+                                    class="text-[#1b160d] dark:text-[#f3eee7] text-xl font-bold leading-tight font-display">
+                                    Fresh Ingredients</h2>
+                                <p class="text-[#584834] dark:text-[#9a794c] text-sm leading-relaxed">
+                                    Made with pure ghee, locally sourced A2 milk, and hand-pounded spices for that
+                                    nostalgic taste.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div
+                            class="flex flex-1 gap-4 rounded-xl border border-[#e7ddcf] dark:border-white/10 bg-white dark:bg-[#2a2218] p-6 flex-col shadow-sm hover:shadow-md transition-shadow">
+                            <div
+                                class="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-3xl">history_edu</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h2
+                                    class="text-[#1b160d] dark:text-[#f3eee7] text-xl font-bold leading-tight font-display">
+                                    Heritage Recipes</h2>
+                                <p class="text-[#584834] dark:text-[#9a794c] text-sm leading-relaxed">
+                                    Prepared by master cooks from families who have guarded these secret recipes for
+                                    generations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CTA Section -->
+        <div class="flex justify-center w-full bg-[#fcfaf8] dark:bg-background-dark py-10">
+            <div class="layout-content-container flex flex-col max-w-[1080px] w-full px-4 md:px-10">
+                <div class="relative overflow-hidden rounded-2xl bg-maroon text-white">
+                    <div class="absolute inset-0 opacity-20 bg-cover bg-center mix-blend-overlay"
+                        data-alt="Abstract pattern of traditional silk saree motifs in gold"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgjrXuYjNOfzctIYFz2mLnSq3Sv-8vObhnPnfAKyOK06cHWfrROMA_MtwxbQxtCSCCXw4KBjD8EQN0TxVBdHxJF7uknwsrwGb36MnKMNvB0YS_yDEjJCKg3-cfQfRIKIeFRq5d3qB2S2i6cUIrC4xoBRVzOQsQzOUOgXASZ6FeGf0t-K1xSHSnV3dZ_b-bigCLvfdtUgFXFg5GS-7FHCZ8RoQeQElbIKmNbLjvDCH1NU5V9Y4e1dB4HVoXUdA81libzkFFvMdRv_0");'>
+                    </div>
+                    <div
+                        class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 px-8 py-16 md:px-16 md:py-20">
+                        <div class="flex flex-col gap-4 text-center md:text-left max-w-lg">
+                            <h1 class="text-white text-3xl md:text-5xl font-bold italic leading-tight font-display">
+                                Gift the Taste of Tradition
+                            </h1>
+                            <p class="text-[#f3eee7] text-base md:text-lg font-normal leading-normal opacity-90">
+                                Our beautifully packaged festive boxes are perfect for weddings, festivals, and
+                                celebrating with loved ones.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <a href="shop.html"
+                                class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-[#1b160d] text-base font-bold leading-normal tracking-wide shadow-xl hover:bg-[#ffb44d] transition-all transform hover:scale-105">
+                                <span class="truncate">Shop Gifting Packs</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer
+            class="flex justify-center w-full py-10 bg-white dark:bg-[#1a140c] border-t border-[#e7ddcf] dark:border-white/5">
+            <div class="layout-content-container flex flex-col max-w-[960px] flex-1 px-4 md:px-10">
+                <div class="flex flex-col gap-8 items-center text-center">
+                    <div class="flex items-center gap-2 text-maroon dark:text-primary mb-2">
+                        <span class="material-symbols-outlined text-2xl">temple_hindu</span>
+                        <h2 class="text-maroon dark:text-[#f3eee7] text-xl font-bold italic font-display">Oor Sweets
+                        </h2>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
+                        <a class="text-[#9a794c] hover:text-primary transition-colors text-sm font-medium"
+                            href="#">About Us</a>
+                        <a class="text-[#9a794c] hover:text-primary transition-colors text-sm font-medium"
+                            href="kitchens.html">Our Kitchens</a>
+                        <a class="text-[#9a794c] hover:text-primary transition-colors text-sm font-medium"
+                            href="#">Shipping Policy</a>
+                        <a class="text-[#9a794c] hover:text-primary transition-colors text-sm font-medium"
+                            href="#">Contact</a>
+                        <a class="text-[#9a794c] hover:text-primary transition-colors text-sm font-medium"
+                            href="#">Privacy</a>
+                    </div>
+                    <div class="flex gap-6">
+                        <a class="text-[#9a794c] hover:text-primary transition-colors" href="#">
+                            <span class="material-symbols-outlined">public</span>
+                        </a>
+                        <a class="text-[#9a794c] hover:text-primary transition-colors" href="#">
+                            <span class="material-symbols-outlined">share</span>
+                        </a>
+                        <a class="text-[#9a794c] hover:text-primary transition-colors" href="#">
+                            <span class="material-symbols-outlined">mail</span>
+                        </a>
+                    </div>
+                    <p class="text-[#9a794c] text-xs font-normal opacity-60">© 2024 Oor Sweets. All rights reserved.
+                        Bringing the sweetness of Tamil Nadu to the world.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
